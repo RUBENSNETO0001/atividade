@@ -1,16 +1,27 @@
 <script>
-    const senha_porta01 = 2468;
-    const senha_porta02 = "abcd";
-    const senha_porta03 = "F3G4J7";
+function verificarPrimeiraPorta(codigo) {
+    return codigo.length === 4 && parseInt(codigo) % 2 === 0;
+}
+function verificarSegundaPorta(codigo) {
+    return codigo.spli('').sort().join('') === codigo;
+}
+function verificarTerceiraPorta(codigo) {
+    let digitos = codigo.replace(/[^0-9]/g, '').length;
+    let letras = codigo.replace(/[^a-zA-Z]/g, '').length;
+    return codigo.length === 6 && digitos >= 2 && letras >= 2;
+}
 
-    var senha = Number(prompt("Senha da porta: "));
-    var senha02 = prompt("Senha 2 da porta: ");
-    var senha03 = prompt("Senha 3 da porta: ");
+function main() {
+    let codigoPorta1 = prompt("Digite o código para a primeira porta: ");
+    let codigoPorta2 = prompt("Digite o código para a segunda porta: ");
+    let codigoPorta3 = prompt("Digite o código para a terceira porta: ");
 
-    if(senha == senha_porta01 && senha02 == senha_porta02 && senha03 == senha_porta03){
-        alert("acesso aprovado.");
+    if (verificarPrimeiraPorta(codigoPorta1) && verificarSegundaPorta(codigoPorta2) && verificarTerceiraPorta(codigoPorta3)) {
+        console.log("Acesso concedido! Todas as portas foram abertas corretamente.");
+    } else {
+        console.log("Acesso negado! Alguma(s) porta(s) não foi(foram) aberta(s) corretamente.");
     }
-    else{
-        alert("acesso negado.");
-    }
+}
+
+main();
 </script>
