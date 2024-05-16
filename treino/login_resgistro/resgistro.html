@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>registro</title>
 </head>
 <body>
     <div>
@@ -26,18 +26,24 @@ function opload(){
  let email_user = document.getElementById('email').value
  let senha_user = document.getElementById('password').value
 
-    if(nickname <= 5 && nickname >= 13 && nickname == Number ){
+    if(nickname < 5 && nickname > 13 && nickname == caracteres){
         alert("não pode entrar");
     }
     else if(email_user <= 8 && email > 50 ){
         alert("não pode entrar");
     }
-    else if(senha_user >= 9 && senha_user == caracteres){
+    else if(senha_user < 4 && senha_user == caracteres){
         alert("não pode entrar");
     }
     else{
-        alert("óla mano");
+        alert("registrado!");
+        function resgistrado(nickname , email_user , senha_user){
+ let usuario = [ nickname = [], email_user = [] , senha_user = []
+ ]
+ return usuario;
+        }
     }
 }
+
     
 </script>

@@ -18,15 +18,19 @@
 </body>
 </html>
 <script>
+   
 function opload(){
- let email_user = document.getElementById('email').value
- let senha_user = document.getElementById('password').value
+ let email_usuario = document.getElementById('email').value
+ let senha_usuario = document.getElementById('password').value
 
-    if(email_user == "Yasminmarciel@gmail.com"){
+ let registro_conta = resgistrado(nickname , email_user , senha_user);
+
+
+    if(email_usuario == email_user && senha_usuario == senha_user){
         alert("bem vindo");
     }
     else{
-        alert("Email não valido")
+        alert("não valido")
     }
 }
     
