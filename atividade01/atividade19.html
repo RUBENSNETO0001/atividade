@@ -1,21 +1,21 @@
 <script>/*
-    let nome_usuario = prompt("Digite seu nome:");
-    let idade_user = Number(prompt("Digite sua idade:"));
+let nome_usuario = prompt("Digite seu nome:");
+let idade_user = Number(prompt("Digite sua idade:"));
 
-    function idade(nome_usuario , idade_user){
+function idade(nome_usuario , idade_user){
 
-        if (idade_user <= 17) {
-            alert("Senhor(a) "+ nome_usuario+ " não pode dirigir.");
-        }
-        else if (idade_user >= 18) {
-            alert("Senhor(a)"+ nome_usuario + " pode dirigir.");
-        }
-        else {
-            alert("Deu ruim");
-        }
+    if (idade_user <= 17) {
+        alert("Senhor(a) "+ nome_usuario+ " não pode dirigir.");
     }
-    let idade_alert =  idade(nome_usuario , idade_user);
-    document.write(idade_alert);
+    else if (idade_user >= 18) {
+        alert("Senhor(a)"+ nome_usuario + " pode dirigir.");
+    }
+    else {
+        alert("Deu ruim");
+    }
+}
+let idade_alert =  idade(nome_usuario , idade_user);
+document.write(idade_alert);
 */
 </script>
 
@@ -39,18 +39,19 @@
     </nav>
 
     <script>
-function idade() {
+        function idade() {
 
-    let nome_user = document.getElementById('nome').value;
-    let idade_user = document.getElementById('idade').value;
+            let nome_user = document.getElementById('nome').value;
+            let idade_user = document.getElementById('idade').value;
 
-    if (idade_user <= 17) {
-        alert("senhor(a) " + nome_user + " não pode dirigir.");
-    }
-    else if (idade_user >= 18) {
-        alert("senhor(a) " + nome_user + " pode dirigir.");
-    }
-}
+            if (idade_user <= 17) {
+                alert("senhor(a) " + nome_user + " não pode dirigir.");
+            }
+            else if (idade_user >= 18) {
+                alert("senhor(a) " + nome_user + " pode dirigir.");
+            }
+        }
     </script>
 </body>
+
 </html>
