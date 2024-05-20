@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +16,20 @@
     </div>
 </body>
 </html>
-<script>
-  
-
+<script src="resgistro.html">
+   
 function opload(){
+
  let email_usuario = document.getElementById('email').value
  let senha_usuario = document.getElementById('password').value
+ let login = resgistrado(nickname , email_user , senha_user);
 
-    if(email_usuario){
+    if(email_usuario && senha_user == login){
         alert("bem vindo");
     }
     else{
         alert("não valido")
     }
 }
-    
+    </script>
 </script>
