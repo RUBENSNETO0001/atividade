@@ -1,22 +1,22 @@
 <script>
-let valor = prompt("Digite um numero: ");
+  let valor = prompt("Digite um numero: ");
 
-function fatorial(valor) {
+  function fatorial(valor) {
 
-  var result = valor;
+    var result = valor;
 
-  if (valor === 0 || valor === 1) 
-    return 1; 
+    if (valro === 0 || valor === 1)
+      return 1;
     //loop
-  while (valor > 1) { 
-    //vai diminuir 1
-    valor--;
-    // vai multiplicara e receber
-    result *= valor;
+    while (valor > 1) {
+      //vai diminuir 1
+      valor--;
+      // vai multiplicara e receber
+      result *= valor;
+    }
+    //retorna
+    return result;
   }
-  //retorna
-  return result;
-}
-let resultado = factorialize(valor);
-alert (resultado)
+  let resultado = fatorial(valor);
+  alert(resultado)
 </script>
